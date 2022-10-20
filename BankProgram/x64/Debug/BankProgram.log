@@ -1,0 +1,1 @@
+﻿MSBUILD : error MSB4166: 자식 노드 "2"이(가) 중간에 종료되었습니다. 종료하는 중입니다. 진단 정보는 "C:\Users\ar07\AppData\Local\Temp\"의 파일에서 MSBuild_*.failure.txt 이름으로 찾을 수 있습니다. 이 위치는 MSBUILDDEBUGPATH 환경 변수를 다른 디렉터리로 설정하여 변경할 수 있습니다.
