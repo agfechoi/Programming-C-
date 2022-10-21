@@ -14,7 +14,15 @@ public:
 	string getAccountOwnerName() { return this->customerName; }
 	void setInfo(int number, string name, int money) { this->accountNum = number; this->customerName = customerName; this->balance = money; }
 	void inputMoney(int money) { this->balance += money; }
-	void outputMoney(int money) { this->balance -= money; }
+	void outputMoney(int money)
+	{
+		if (this->balance - money < 0)
+		{
+			cout << "가지고 있는 만큼의 양만 인출가능 합니다." << endl;
+			return;
+		}
+		else this->balance -= money;
+	}
 };
 
 Account account[100];
@@ -124,8 +132,6 @@ int main()
 		case Quit:
 			return 0;
 		}
-	}
-	
-	
+	}	
 	return 0;
 }
